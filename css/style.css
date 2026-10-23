@@ -333,13 +333,13 @@ button { font: inherit; color: inherit; }
 .gallery { background: var(--green-950); color: var(--cream-100); }
 .gallery-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
 .gallery-grid li { min-width: 0; }
-.g-wide, .g-placeholder { grid-column: 1 / -1; }
+.g-wide, .g-wide2, .g-placeholder { grid-column: 1 / -1; }
 .g-item {
   display: block; width: 100%; height: 100%; padding: 0; border: 0; cursor: zoom-in;
   border-radius: var(--radius-sm); overflow: hidden; background: var(--green-800); position: relative;
 }
 .g-item img { width: 100%; height: 100%; aspect-ratio: 1; object-fit: cover; transition: transform .8s var(--ease), opacity .3s; }
-.g-wide .g-item img { aspect-ratio: 16 / 9; }
+.g-wide .g-item img, .g-wide2 .g-item img { aspect-ratio: 16 / 9; }
 .g-item::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 60%, rgba(12, 26, 19, .5)); opacity: 0; transition: opacity .3s; }
 .g-item:hover img { transform: scale(1.05); }
 .g-item:hover::after { opacity: 1; }
@@ -418,8 +418,6 @@ button { font: inherit; color: inherit; }
 /* ---------- Breakpoints ---------- */
 @media (min-width: 600px) {
   .cards { grid-template-columns: repeat(2, 1fr); }
-  .gallery-grid { grid-template-columns: repeat(3, 1fr); }
-  .g-placeholder { grid-column: auto; }
   .highlight-list { grid-template-columns: repeat(4, 1fr); }
   .hero .btn-row .btn { flex: 0 0 auto; }
 }
@@ -463,11 +461,10 @@ button { font: inherit; color: inherit; }
   .combo { padding: 32px 36px 16px; }
   .combo .dish-list { grid-template-columns: repeat(3, 1fr); }
   .combo .dish { border-bottom: 0; }
-  .gallery-grid { grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(2, 240px); grid-auto-rows: auto; }
+  .gallery-grid { grid-template-columns: repeat(4, 1fr); grid-auto-rows: 240px; }
   .g-wide { grid-column: span 2; grid-row: span 2; }
-  .g-placeholder { grid-column: 1 / -1; }
-  .g-placeholder .placeholder-tile { min-height: 0; }
-  .g-item img, .g-wide .g-item img { aspect-ratio: auto; }
+  .g-wide2 { grid-column: span 2; }
+  .g-item img, .g-wide .g-item img, .g-wide2 .g-item img { aspect-ratio: auto; }
   .footer-inner { grid-template-columns: auto 1fr auto; text-align: left; justify-items: start; align-items: center; }
   .footer-brand img { width: 160px; }
   .footer-address { justify-self: center; }
