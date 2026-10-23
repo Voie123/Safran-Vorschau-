@@ -193,13 +193,14 @@ button { font: inherit; color: inherit; }
 .hero::before {
   content: ""; position: absolute; inset: 0; z-index: -1;
   background:
-    linear-gradient(180deg, rgba(12, 26, 19, .55) 0%, rgba(12, 26, 19, .25) 35%, rgba(12, 26, 19, .82) 75%, rgba(12, 26, 19, .96) 100%),
+    linear-gradient(180deg, rgba(12, 26, 19, .55) 0%, rgba(12, 26, 19, .55) 25%, rgba(12, 26, 19, .78) 50%, rgba(12, 26, 19, .9) 75%, rgba(12, 26, 19, .97) 100%),
     radial-gradient(120% 80% at 0% 100%, rgba(12, 26, 19, .7), transparent 60%);
 }
 @keyframes hero-zoom { from { transform: scale(1.08); } to { transform: scale(1); } }
 .hero-content { max-width: 1200px; }
 .hero h1 { font-size: clamp(2.8rem, 11vw, 6.2rem); line-height: .98; margin-bottom: 22px; text-wrap: balance; }
-.hero h1 em { display: inline-block; }
+.hero h1 em { display: inline-block; color: var(--gold-300); }
+.hero h1, .hero .eyebrow, .hero-lead, .hero-hours { text-shadow: 0 1px 2px rgba(0, 0, 0, .45), 0 2px 18px rgba(0, 0, 0, .55); }
 .hero-lead { font-size: clamp(1.02rem, 2.6vw, 1.2rem); max-width: 34em; color: rgba(246, 241, 231, .88); margin-bottom: 32px; }
 .hero .btn-row .btn { flex: 1 1 220px; }
 .hero-scroll {
