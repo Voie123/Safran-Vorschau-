@@ -518,7 +518,6 @@ button { font: inherit; color: inherit; }
 .card-kicker { color: var(--gold-600); }
 .card h3 { color: var(--green-900); }
 .card p:last-child { color: var(--ink-soft); }
-.gallery { padding-top: 0; }
 
 /* ---------- Helle Kopfzeile und Footer ---------- */
 .site-header { background: rgba(255, 255, 255, .96); color: var(--ink); border-bottom: 1px solid var(--cream-200); }
@@ -542,3 +541,8 @@ button { font: inherit; color: inherit; }
   .site-nav ul a::after { background: var(--bordeaux); }
   .site-nav ul a[aria-current="true"] { color: var(--bordeaux); }
 }
+
+/* ---------- Feinschliff ---------- */
+.section p.eyebrow { color: var(--gold-600); }
+.about, .specials, .menu, .gallery, .contact { border-top: 1px solid var(--cream-200); }
+.footer-nav a { display: inline-block; padding: 10px 4px; }
