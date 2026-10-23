@@ -502,3 +502,20 @@ button { font: inherit; color: inherit; }
 .legal hr { border: 0; border-top: 1px solid var(--cream-300); margin: 28px 0; }
 .legal p a { overflow-wrap: anywhere; }
 .legal a { color: var(--green-700); text-decoration-color: var(--gold-500); }
+
+/* ---------- Helle Abschnitte (Highlights, Spezialitäten, Galerie) ---------- */
+.highlights { background: #fff; color: var(--ink); border-top: 0; border-bottom: 1px solid var(--cream-200); }
+.highlight-list li { color: var(--ink-soft); }
+.highlight-list strong { color: var(--green-900); }
+.highlights .icon-lg { color: var(--bordeaux); }
+.specials, .gallery { background: #fff; color: var(--ink); }
+.specials::before { display: none; }
+.specials h2, .gallery h2 { color: var(--green-900); }
+.specials .eyebrow, .gallery .eyebrow { color: var(--gold-600); }
+.specials .section-head p { color: var(--ink-soft); }
+.card { background: #fff; border-color: var(--cream-200); }
+.card:hover { border-color: var(--gold-500); }
+.card-kicker { color: var(--gold-600); }
+.card h3 { color: var(--green-900); }
+.card p:last-child { color: var(--ink-soft); }
+.gallery { padding-top: 0; }
