@@ -548,3 +548,14 @@ button { font: inherit; color: inherit; }
 .footer-nav a { display: inline-block; padding: 10px 4px; }
 .menu .dish-price { color: var(--ink); }
 .combo .dish-price { color: var(--gold-300); }
+
+/* ---------- Andenken: erstes Logo ---------- */
+.memento {
+  margin: 32px 0 0; max-width: 400px; padding: 14px 14px 16px;
+  background: #fff; border: 1px solid var(--cream-200); border-radius: var(--radius-sm);
+  box-shadow: 0 12px 28px -18px rgba(15, 10, 8, .35); transform: rotate(-1.2deg);
+}
+.memento img { width: 100%; height: auto; }
+.memento figcaption { margin-top: 12px; font-family: var(--font-serif); font-style: italic; font-size: 1.05rem; line-height: 1.4; color: var(--ink-soft); }
+.memento figcaption strong { display: block; font-family: var(--font-sans); font-style: normal; font-size: .7rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--gold-600); margin-bottom: 4px; }
+@media (prefers-reduced-motion: reduce) { .memento { transform: none; } }
