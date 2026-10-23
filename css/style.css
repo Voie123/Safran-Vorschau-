@@ -55,7 +55,7 @@ body {
   font-size: 1rem;
   line-height: 1.65;
   color: var(--ink);
-  background: var(--cream-100);
+  background: #fff;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   padding-bottom: 64px; /* Platz für Quickbar (mobil) */
@@ -225,7 +225,7 @@ button { font: inherit; color: inherit; }
 .section-head h2 { margin-bottom: 16px; }
 
 /* Über uns */
-.about { background: var(--cream-100); }
+.about { background: #fff; }
 .about h2 { color: var(--green-900); margin-bottom: 26px; }
 .about h2 em { color: var(--gold-600); }
 .about-grid { display: grid; gap: 48px; align-items: center; }
@@ -263,7 +263,7 @@ button { font: inherit; color: inherit; }
 .card p:last-child { font-size: .93rem; color: rgba(246, 241, 231, .75); margin: 0; }
 
 /* Speisekarte */
-.menu { background: var(--cream-50); }
+.menu { background: #fff; }
 .menu::before {
   content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .5;
   background-image: radial-gradient(circle at 1px 1px, rgba(155, 29, 35, .18) 1px, transparent 0);
@@ -313,7 +313,7 @@ button { font: inherit; color: inherit; }
 .dish-price { font-variant-numeric: lining-nums tabular-nums; order: 2; font-family: var(--font-serif); font-size: 1.3rem; font-weight: 600; color: var(--gold-600); white-space: nowrap; }
 .dish p { margin: 6px 0 0; font-size: .92rem; color: var(--ink-soft); max-width: 40em; }
 .dish-featured {
-  background: #fff; border: 1px solid var(--cream-200); border-left: 3px solid var(--bordeaux);
+  background: var(--cream-50); border: 1px solid var(--cream-200); border-left: 3px solid var(--bordeaux);
   border-radius: var(--radius-sm); padding: 18px 20px; margin-bottom: 10px;
 }
 .badge { display: inline-block; margin-top: 10px; font-size: .68rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--green-700); background: rgba(47, 87, 71, .1); padding: 5px 10px; border-radius: 99px; }
@@ -364,7 +364,7 @@ button { font: inherit; color: inherit; }
 .lightbox[open] { animation: fade-in .3s var(--ease); }
 
 /* Kontakt */
-.contact { background: var(--cream-100); }
+.contact { background: #fff; }
 .contact h2 { color: var(--green-900); margin-bottom: 32px; }
 .contact-grid { display: block; }
 .contact-list { margin: 0 0 32px; display: grid; gap: 22px; }
@@ -492,7 +492,7 @@ button { font: inherit; color: inherit; }
 /* ---------- Rechtliche Seiten ---------- */
 .legal-page { padding-bottom: 0; }
 .legal-page .header-inner .btn-outline { color: var(--cream-100); }
-.legal { background: var(--cream-50); padding-block: clamp(48px, 8vw, 96px); }
+.legal { background: #fff; padding-block: clamp(48px, 8vw, 96px); }
 .legal-inner { max-width: 780px; }
 .legal h1 { font-size: clamp(2.4rem, 7vw, 3.6rem); color: var(--green-900); margin: 32px 0 24px; }
 .legal h2 { font-size: 1.6rem; color: var(--green-900); margin: 36px 0 10px; }
