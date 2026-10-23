@@ -519,3 +519,26 @@ button { font: inherit; color: inherit; }
 .card h3 { color: var(--green-900); }
 .card p:last-child { color: var(--ink-soft); }
 .gallery { padding-top: 0; }
+
+/* ---------- Helle Kopfzeile und Footer ---------- */
+.site-header { background: rgba(255, 255, 255, .96); color: var(--ink); border-bottom: 1px solid var(--cream-200); }
+.brand { color: var(--ink); }
+.brand-name { color: #8e2b25; }
+.brand-sub { color: #8d6a8c; }
+.nav-toggle { border-color: var(--cream-300); }
+.nav-toggle-bars, .nav-toggle-bars::before, .nav-toggle-bars::after { background: var(--ink); }
+.nav-toggle[aria-expanded="true"] .nav-toggle-bars { background: transparent; }
+.site-nav { background: #fff; border-bottom-color: var(--cream-200); }
+.site-nav li + li { border-top-color: var(--cream-200); }
+.site-nav ul a { color: var(--ink); }
+.site-nav ul a:hover { color: var(--bordeaux); }
+.legal-page .header-inner .btn-outline { color: var(--ink); border-color: var(--cream-300); }
+.legal-page .header-inner .btn-outline:hover { color: var(--cream-50); }
+.site-footer { background: #fff; color: var(--ink-soft); border-top: 1px solid var(--cream-200); }
+.footer-address a, .footer-nav a { color: var(--ink); }
+.footer-address a:hover, .footer-nav a:hover { color: var(--bordeaux); }
+@media (min-width: 900px) {
+  .site-nav ul a { color: var(--ink); }
+  .site-nav ul a::after { background: var(--bordeaux); }
+  .site-nav ul a[aria-current="true"] { color: var(--bordeaux); }
+}
