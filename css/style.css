@@ -559,3 +559,6 @@ button { font: inherit; color: inherit; }
 .memento figcaption { margin-top: 12px; font-family: var(--font-serif); font-style: italic; font-size: 1.05rem; line-height: 1.4; color: var(--ink-soft); }
 .memento figcaption strong { display: block; font-family: var(--font-sans); font-style: normal; font-size: .7rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--gold-600); margin-bottom: 4px; }
 @media (prefers-reduced-motion: reduce) { .memento { transform: none; } }
+
+/* Mobil: Foto bei "Über uns" ausblenden (steht auch in der Galerie), das erste Logo bildet den Abschluss */
+@media (max-width: 899px) { .about-media { display: none; } }
